@@ -10,12 +10,12 @@ public class FileBeolvas {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         File emberek = new File("src/modell/emberek.txt");
         
-        
         BufferedReader br = new BufferedReader(new FileReader(emberek));
         
-        String st;
-        while ((st = br.readLine()) !=null) {            
-            System.out.println(st);
+        String string;
+        while ((string = br.readLine()) !=null) {            
+            System.out.println(string);
         }
     }
+    
 }

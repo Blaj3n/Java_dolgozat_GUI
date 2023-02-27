@@ -1,20 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
 package java_dolgozat_gui;
 
-/**
- *
- * @author ulrich.bence
- */
+import javax.swing.JFrame;
+
 public class Java_dolgozat_GUI extends javax.swing.JPanel {
 
-    /**
-     * Creates new form GUI
-     */
+    public static void main(String[] args) {
+        
+    }
     public Java_dolgozat_GUI() {
         initComponents();
+        JFrame frame = new JFrame();
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     /**
@@ -42,6 +39,9 @@ public class Java_dolgozat_GUI extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
 
+        setToolTipText("");
+        setName(""); // NOI18N
+
         jLabel1.setText("Lányok");
 
         jLabel2.setText("Fiúk");
@@ -53,8 +53,18 @@ public class Java_dolgozat_GUI extends javax.swing.JPanel {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Összesítő"));
 
         jRadioButton1.setText("lány");
+        jRadioButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jRadioButton1MouseClicked(evt);
+            }
+        });
 
         jRadioButton2.setText("fiú");
+        jRadioButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jRadioButton2MouseClicked(evt);
+            }
+        });
 
         jLabel3.setText("legidősebb:");
 
@@ -171,7 +181,25 @@ public class Java_dolgozat_GUI extends javax.swing.JPanel {
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(47, 47, 47))
         );
+
+        getAccessibleContext().setAccessibleName("");
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jRadioButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jRadioButton1MouseClicked
+        int no_kor = 0;
+        String no_nem = "L";
+        for (int i = 0; i < emberek.length; i++) {
+            
+        }
+    }//GEN-LAST:event_jRadioButton1MouseClicked
+
+    private void jRadioButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jRadioButton2MouseClicked
+        int ferfi_kor = 0;
+        String ferfi_nem = "F";
+        for (int i = 0; i < emberek.length; i++) {
+            
+        }
+    }//GEN-LAST:event_jRadioButton2MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
